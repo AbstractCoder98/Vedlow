@@ -1,0 +1,297 @@
+/*--------------------Valores predefinidos--------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*--------------------Social bar--------------------*/
+.social-bar{
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+.icon{
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+.icon-facebook{
+	background: #2E406E;
+}
+.icon-twitter{
+	background: #339DC5;
+}
+.icon-instagram{
+	background: #3F60A5;
+}
+.icon:first-child{
+	border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+	border-radius: 0 0 0 1rem
+}
+.icon:hover{
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 0.5rem rgba(0,0,0,0.42)
+}
+/*--------------------Encabezado--------------------*/
+
+header{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fon0.gif);
+}
+.logo{
+	width: 40%;
+	margin-left: 20px;
+}
+/*Navegacion*/
+header nav{
+	overflow: hidden;
+}
+header nav ul{
+	list-style: none;
+}
+header nav ul li{
+	float: left;
+}
+header nav ul li a{
+	padding: 10px 20px;
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	font-size: 1.05em;
+	font-style: italic;
+}
+header nav ul li a:focus{
+	color: grey;
+}
+
+/*--------------------CONTENIDO--------------------*/
+
+/*Fondos de pantalla*/
+#conocimientos{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fon1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	padding: 5%;
+	background-repeat: no-repeat;
+}
+#motivaciones{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fon2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	padding: 5%;
+	background-repeat: no-repeat;
+}
+#mi{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fon3.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	padding: 5%;
+	background-repeat: no-repeat;
+}
+#tablero{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fon4.jpg);
+	height: 600px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	padding: 5%;
+	background-repeat: no-repeat;
+}
+#cajas{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/fon5.jpg);
+	height: 1000px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	padding: 5%;
+	background-repeat: no-repeat;
+}
+/*--------------------Texto--------------------*/
+h2{
+	font-size: 4em;
+	text-align: center;
+	color: white;
+	margin: 20px;
+	font-family: 'Matura MT Script Capitals';
+}
+.texto,#lista,#f{
+	list-style: none;
+	text-align: center;
+}
+#lista{
+	margin-bottom: 10%;
+}
+#lista li{
+	list-style: disc;
+}
+ul li{
+	color: white;
+	font-size: 2em;
+	font-family: 'Bradley Hand ITC';
+}
+.texto li{
+	margin-bottom: 10%;
+}
+#txi{
+	list-style: none;
+}
+#txi li{
+	margin-bottom: 10%;
+	text-align: center;
+}
+p{
+	font-size: 1.5em;
+}
+/*--------------------Imagenes--------------------*/
+.pasiones{
+	display: flex;
+	flex-direction: row;
+}
+.imagen{
+	display: flex;
+	flex-direction: column;
+}
+#imagenes1{
+	width: 25%;
+}
+#imagenes2{
+	width: 50%;
+	height: auto;
+}
+#imagenes3{
+	width: 25%;
+}
+.imagen img{
+	width: 100%;
+	border: 2px solid white;
+	border-radius: 5%;
+	margin: 20px;
+}
+#i1{
+	position: relative;
+	transform: rotate(-15deg);
+}
+#i2{
+	position: relative;
+	transform: rotate(15deg);
+}
+#i3{
+	position: relative;
+	right: 20px;
+}
+#i4{
+	position: relative;
+	transform: rotate(-15deg);
+	right: 30px;
+}
+#i5{
+	position: relative;
+	right: 20px;
+}#i6{
+	position: relative;
+	bottom: 10px;
+	transform: rotate(-15deg);
+}
+#i7{
+	position: relative;
+	transform: rotate(15deg);
+}
+#i8{
+	position: relative;
+}
+#i9{
+	position: relative;
+	transform: rotate(-15deg);
+}
+#i10{
+	position: relative;
+	transform: rotate(15deg);
+	top: 20px;
+}
+/*--------------------JS--------------------*/
+#descripcion{
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: white;
+}
+#cajon{
+	display: flex;
+	justify-content: space-around;
+}
+.nota{
+	padding: 0.5rem;
+	width: 20%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+}
+.botones{
+	display: flex;
+	justify-content: space-between;
+}
+.nota a:hover{
+	cursor: pointer;
+	color: grey;
+	font-weight: bold;
+}
+.nota input{
+	margin: 10px 0 0 0;
+	font-size: 1.5em;
+}
+.nota textarea{
+	margin: 10px 0 10px 0;
+	font-size: 1.2em;
+	resize: none;
+	height: 150px;
+}
+.nota select{
+	font-size: 1.2em;
+}
+#boton,#mas{
+	background: black;
+	width: 0;
+	outline: none;
+	font-size: 2rem;
+	color: white;
+	text-align: left;
+	list-style: none;
+	font-weight: bold;
+}
+#boton:hover,#mas:hover{
+	color: #808080;
+	cursor: pointer;
+}
+#botonf{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.box{
+	width: 80%;
+	height: 60%;
+	border: 1px solid black;
+}
+/*--------------------Pie de pagina--------------------*/
+
+footer,.nombre{
+	background: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	position: relative;
+}
